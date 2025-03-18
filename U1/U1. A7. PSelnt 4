@@ -1,0 +1,78 @@
+Un banco necesita realizar un sistema de evaluación preliminar para otorgar un crédito, a fin de mejorar el tiempo de validación y que los potenciales clientes puedan saber de manera más rápido a quiénes se les pudiera otorgar un crédito.
+
+De acuerdo a la última reunión innecesaria, a las 6:00 p.m. un día sábado, se presentaron las siguientes condicionales.
+
+El prospecto debe tener al menos 21 años de edad, debe tener un ingreso de al menos 8,500 mensuales, debe tener al menos 5 años de historial crediticio y dicho historial crediticio deberá ser positivo, es decir, que siempre han pagado a tiempo, finalmente, el monto del crédito deberá ser de al menos $10,000.
+
+Después de una discusión acalorada donde la Lic. Petra comenzó a llorar defendiendo a la gente de bajos recursos, se llegó al siguiente acuerdo, fue horrible, la reunión terminó a las 9:00 p.m., pero al final, todos abrazaron a la Lic. Petra y oraron por ella, hubo galletas y café para todos. Se llegaron a los siguientes acuerdos.
+
+El prospecto deberá tener al menos 18 años de edad, con un ingreso de al menos $4,000 al mes, deberá tener al menos 2 años trabajando, ya no se revisará su historial crediticio y se estableció a que el préstamo máximo sería de máximo un 15% del salario mensual del prospecto multiplicado por 12 mensualidades. Adicionalmente, si el prospecto tiene al menos $10,000 de saldo en su cuenta de banco o si el préstamo es para una cuestión médica, su crédito será aprobado automáticamente.
+
+El reporte deberá mostrar la edad del prospecto, su ingreso mensual, de cuánto sería el monto máximo del préstamo y su crédito será aprobado o no.
+
+Algoritmo EvaluacionCredito
+		Definir edad, ingreso_mensual, saldo_bancario Como Real
+		Definir prestamo_maximo Como Real
+		Definir cuestion_medico Como Logico
+		
+		Escribir "Ingrese la edad del prospecto: "
+		Leer edad
+		Escribir "Ingrese el ingreso mensual del prospecto: "
+		Leer ingreso_mensual
+		Escribir "Ingrese el saldo en la cuenta bancaria (opcional, ingrese 0 si no tiene): "
+		Leer saldo_bancario
+		Escribir " Es tu credito por una cuestion medica? (1 = Si 0 = No): "
+		leer cuestion_medico
+		// Validación de edad e ingreso
+		c1 = edad >=18
+		c2 = ingreso_mensual >= 4000
+		Escribir c1
+		Escribir c2
+		Escribir aprobado_credito
+		Escribir ingreso_mensual
+		Escribir cuestion_medico
+		// Evaluacion de Credito
+		credito_aplicable = c1 y c2 O cuestion_medico
+
+// Cálculo del préstamo máximo
+prestamo_maximo <- ingreso_mensual *0.15 *12
+
+// Aprobación automática saldo_bancario >= 10000 O motivo_prestamo = "medico" Entonces
+	Escribir "Crédito Aprobado (Aprobación Automática)"
+	aprobado <- Verdadero
+	Escribir "Crédito Aprobado"
+	aprobado <- Verdadero
+
+// Reporte
+Escribir "--- Reporte ---"
+Escribir "Edad: ", edad, " años" 
+Escribir "Ingreso Mensual: $", ingreso_mensual
+Escribir "Monto Máximo del Préstamo: $", prestamo_maximo
+
+// Mostrar si el crédito fue aprobado o no aprobado
+	Escribir "Estado del Crédito: Aprobado"
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingrese la edad del prospecto:
+> 20
+Ingrese el ingreso mensual del prospecto:
+> 4000
+Ingrese el saldo en la cuenta bancaria (opcional, ingrese 0 si no tiene):
+
+> 0
+ Es tu credito por una cuestion medica? (1 = Si 0 = No):
+> 1
+VERDADERO
+VERDADERO
+
+4000
+VERDADERO
+Crédito Aprobado (Aprobación Automática)
+Crédito Aprobado
+--- Reporte ---
+Edad: 20 años
+Ingreso Mensual: $4000
+Monto Máximo del Préstamo: $7200
+Estado del Crédito: Aprobado
+*** Ejecución Finalizada. ***
