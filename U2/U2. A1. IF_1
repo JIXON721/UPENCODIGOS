@@ -1,0 +1,39 @@
+Design an algorithm that solves the following problem.
+
+A programmer wants to know which unit of data measure should be the most appropriate depending on the bytes that the user enters. The units to be reviewed are KB, MB, GB, TB and PB. Use the following reference table.
+
+
+
+If the user enters 5045 bytes, this is divided by 1024 and the message should be 4.92 KB. 
+
+Use this link to validate the conversion. https://discoveryformacion.com/calculadora-para-convertir-unidades-de-almacenamiento-informaticas/
+
+Algoritmo CONVERSION_OF_BYTES
+	Escribir "Ingrese la cantidad de Bytes a convertir"
+	Definir bytes Como Real
+	Leer bytes
+	Kb <- bytes/2^10
+	mb <- bytes/2^20
+	gb <- bytes/2^30
+	tb <- bytes/2^40
+	pb <- bytes/2^50
+	
+	Mostrar "La cantidad de bytes son: ", bytes
+	Si bytes >= 2^10 Y bytes < 2^20 Entonces
+		Mostrar  "Los KB son: ", kb
+	FinSi
+	Si bytes >= 2^20 Y bytes < 2^30 Entonces
+		Mostrar  "Los MB son: ", mb
+		Si bytes >= 2^30 Y bytes < 2^40 Entonces
+			Mostrar "Los GB son: ", gb
+			Si bytes >= 2^40 Y bytes < 2^50 Entonces
+				Mostrar "Los TB son: ", tb
+				Si bytes >= 2^50 Entonces
+					Mostrar "Los PB son: ", pb
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo
+
