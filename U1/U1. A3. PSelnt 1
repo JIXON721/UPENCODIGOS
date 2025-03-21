@@ -1,3 +1,5 @@
+Este texto es de la otra rama
+
 Realiza el código anexo en PSeInt, ejecuta el código y envía captura de pantalla de la consola con el programa ejecutado.
 Algoritmo cuenta_regresiva_navidad
     Escribir "Ingresa el mes actual (numero del 1 al 12):"
