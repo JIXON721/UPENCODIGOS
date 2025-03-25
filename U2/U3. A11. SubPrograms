@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Escribir "Cual Figura vas a poner?(1) Prisma (2) Cubo (3) Piramide"
+	Leer figura
+	Si fig = 1 Entonces
+		Escribir "Ingresa el area y la volumen para la figura Prisma."
+		leer area, volumen
+		area = (2*basearea) + (basePerimeter*height)
+		volumen = baseArea * height
+		Si fig = 2 Entonces
+			Escribir "Ingresa el area y volumen para el figura Cubo."
+			leer area, volumen
+			area = 6
+			volumen = s3
+		FinSi
+	FinSi
+FinAlgoritmo
