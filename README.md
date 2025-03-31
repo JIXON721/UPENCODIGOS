@@ -1,7 +1,14 @@
 # UPENCODIGOS
-Repositorio de codigos de la Universidad.
-![image](https://github.com/user-attachments/assets/2b289177-4ba3-4687-bcb1-4b547dddf417)
 
+
+
+![image](https://github.com/user-attachments/assets/69055bb7-cbf3-4522-9208-d5153553a2c9)
+
+
+
+
+
+Repositorio de codigos de la Universidad.
 
 Fundamentos de Programmacion
 
