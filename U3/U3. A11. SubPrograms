@@ -1,0 +1,13 @@
+Design an algorithm that uses subprograms /functions/threads, to calculate the area and volume of 3 different geometric shapes.
+
+The user must be able to choose which figure he wants to calculate and display his results, the program must be able to repeat if the user wishes and choose another option.
+
+Add the full code in the U3 folder to your repository and submit a screenshot of your code on GitHub .
+
+----------------------------------------------------------------------
+
+Design an algorithm that uses subprograms/functions/threads to calculate the area and volume of 3 different geometric figures. 
+
+The user should be able to choose which figure to calculate and display its results, the program should be able to be repeated if the user wishes and choose another option.
+
+Add the complete code to your repository in the U3 folder and submit a screenshot of your code on GitHub .
