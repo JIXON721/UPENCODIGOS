@@ -21,3 +21,8 @@ Unit 2
 
 This Unit introduces 3 new coding lines for Pselnt: IF, FOR, AND WHILE
 
+https://github.com/JIXON721/UPENCODIGOS/tree/main/U2
+
+Unit 3
+
+This Unit introduces to GitHub on how to put codes in main files and how to use GitHub
